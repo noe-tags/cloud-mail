@@ -1,19 +1,21 @@
 name = "cloud-mail"
+account_id = "b3690efe8b8a92d8bf7bb151c61b0ae9"
 main = "src/index.js"
 compatibility_date = "2025-06-04"
 keep_vars = true
+routes = [{ pattern = "mail.noetaaa.com", custom_domain = true }]
 
 [observability]
 enabled = true
 
-#[[d1_databases]]
-#binding = "db"			#d1数据库绑定名默认不可修改
-#database_name = ""		#d1数据库名字
-#database_id = ""		#d1数据库id
+[[d1_databases]]
+binding = "db"
+database_name = "db"
+database_id = "eef0cac0-30b3-4a06-aa44-e0bbe06c91df"
 
-#[[kv_namespaces]]
-#binding = "kv"			#kv绑定名默认不可修改
-#id = ""					#kv数据库id
+[[kv_namespaces]]
+binding = "kv"
+id = "36660367dd4147e6b40a3649f5db64e0"
 
 #[[r2_buckets]]
 #binding = "r2"			#r2对象存储绑定名默认不可修改
